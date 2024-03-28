@@ -10,6 +10,8 @@ import static javax.sound.sampled.AudioFormat.Encoding.PCM_SIGNED;
 
 public class Blubb {
     private static final int SAMPLE_COUNT = 200;
+    private static final int SAMPLE_RATE = 44100;
+//    private static final int SAMPLE_RATE = 96000;
     private static boolean running = true;
 
     public static void printAudioSystemInfo() {
@@ -70,11 +72,11 @@ public class Blubb {
     public static void run() throws LineUnavailableException {
         var audioFormat = new AudioFormat(
             /* encoding         */  PCM_SIGNED,
-            /* sampleRate       */  44100,
+            /* sampleRate       */  SAMPLE_RATE,
             /* sampleSizeInBits */  16,
             /* channels         */  1,
             /* frameSize        */  2,
-            /* frameRate        */  44100,
+            /* frameRate        */  SAMPLE_RATE,
             /* bigEndian        */  false
         );
         DataLine.Info info = new DataLine.Info(SourceDataLine.class, audioFormat);
