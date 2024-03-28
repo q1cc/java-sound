@@ -1,7 +1,6 @@
 package net.q1cc.javasound.demo;
 
 import javax.sound.sampled.*;
-
 import java.nio.ByteBuffer;
 import java.nio.ShortBuffer;
 import java.util.Arrays;

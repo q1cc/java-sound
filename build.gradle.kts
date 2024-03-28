@@ -3,7 +3,7 @@ plugins {
     application
 }
 
-group = "org.example"
+group = "net.q1cc.javasound.demo"
 version = "1.0-SNAPSHOT"
 
 repositories {
